@@ -58,7 +58,7 @@ func main() {
 		}
 	}
 
-	socketUrl := "ws://localhost:7078" + "/ws"
+	socketUrl := "ws://localhost:8000" + "/ws"
 	conn, _, err := websocket.DefaultDialer.Dial(socketUrl, nil)
 	if err != nil {
 		logrus.Fatal("Error connecting to Websocket Server:", err)
